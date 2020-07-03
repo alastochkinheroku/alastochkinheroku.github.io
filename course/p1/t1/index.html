@@ -1,110 +1,132 @@
 
 
 
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="ru" class="no-js">
   <head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
       
       
+      
+      
+        <meta name="lang:clipboard.copy" content="Копировать в буфер">
+      
+        <meta name="lang:clipboard.copied" content="Скопировано в буфер">
+      
+        <meta name="lang:search.language" content="en, ru">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="Совпадений не найдено">
+      
+        <meta name="lang:search.result.one" content="Найдено 1 совпадение">
+      
+        <meta name="lang:search.result.other" content="Найдено # совпадений">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.4.0">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
     
     
       
-        <title>1.1. Технология программирования - Курс "Мышление программиста"</title>
+        <title>1.1. Алгоритм и блок-схема - Курс "Алгоритмическое мышление программиста"</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.fe0cca5b.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.451f80e5.css">
       
       
     
+    
+      <script src="../../../assets/javascripts/modernizr.1aa3b519.js"></script>
     
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
-    
+    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
     
       <link rel="stylesheet" href="../../../mermaid/mermaid.css">
     
       <link rel="stylesheet" href="../../../katex/katex.min.css">
     
     
-      
-    
-    
   </head>
-  
   
     <body dir="ltr">
   
-    
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer"></label>
-    <div data-md-component="skip">
-      
-    </div>
-    <div data-md-component="announce">
-      
-    </div>
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="../../../#_1" tabindex="1" class="md-skip">
+        Перейти к содержанию
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
-  <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="../../.." title="Курс "Мышление программиста"" class="md-header-nav__button md-logo" aria-label="Курс "Мышление программиста"">
-      
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
-
-    </a>
-    <label class="md-header-nav__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
-    </label>
-    <div class="md-header-nav__title" data-md-component="header-title">
-      
-        <div class="md-header-nav__ellipsis">
-          <span class="md-header-nav__topic md-ellipsis">
-            Курс "Мышление программиста"
-          </span>
-          <span class="md-header-nav__topic md-ellipsis">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../../.." title="Курс "Алгоритмическое мышление программиста"" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
             
-              1.1. Технология программирования
+              <span class="md-header-nav__topic">
+                Курс "Алгоритмическое мышление программиста"
+              </span>
+              <span class="md-header-nav__topic">
+                1.1. Алгоритм и блок-схема
+              </span>
             
-          </span>
+          
         </div>
-      
-    </div>
-    
-      <label class="md-header-nav__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-      </label>
-      
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      <input type="text" class="md-search__input" name="query" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
       </button>
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
+        <div class="md-search-result" data-md-component="result">
           <div class="md-search-result__meta">
-            Initializing search
+            Начните печатать для поиска
           </div>
           <ol class="md-search-result__list"></ol>
         </div>
@@ -112,34 +134,34 @@
     </div>
   </div>
 </div>
-    
-    
+          
+        
+      </div>
+      
+    </div>
   </nav>
 </header>
     
-    <div class="md-container" data-md-component="container">
+    <div class="md-container">
       
         
       
       
-        
-      
-      <main class="md-main" data-md-component="main">
-        <div class="md-main__inner md-grid">
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
           
             
               <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
-  <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Курс "Мышление программиста"" class="md-nav__button md-logo" aria-label="Курс "Мышление программиста"">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../../.." title="Курс "Алгоритмическое мышление программиста"" class="md-nav__button md-logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
-
+        <i class="md-icon"></i>
+      
     </a>
-    Курс "Мышление программиста"
+    Курс "Алгоритмическое мышление программиста"
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -165,19 +187,13 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
     <label class="md-nav__link" for="nav-2">
       Курс
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
     </label>
-    <nav class="md-nav" aria-label="Курс" data-md-level="1">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-2">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
         Курс
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -204,19 +220,13 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2" checked>
     
     <label class="md-nav__link" for="nav-2-2">
       1. Основы алгоритмизации и программирования
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
     </label>
-    <nav class="md-nav" aria-label="1. Основы алгоритмизации и программирования" data-md-level="2">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-2-2">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
         1. Основы алгоритмизации и программирования
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -231,13 +241,71 @@
 
   <li class="md-nav__item md-nav__item--active">
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
     
-    <a href="./" title="1.1. Технология программирования" class="md-nav__link md-nav__link--active">
-      1.1. Технология программирования
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        1.1. Алгоритм и блок-схема
+      </label>
+    
+    <a href="./" title="1.1. Алгоритм и блок-схема" class="md-nav__link md-nav__link--active">
+      1.1. Алгоритм и блок-схема
     </a>
     
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Содержание</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="Что такое программирование?" class="md-nav__link">
+    Что такое программирование?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-" title="Блок-схема алгоритма" class="md-nav__link">
+    Блок-схема алгоритма
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../t2/" title="1.2. Переменные и константы" class="md-nav__link">
+      1.2. Переменные и константы
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../t3/" title="1.2. Основные операции с переменными" class="md-nav__link">
+      1.2. Основные операции с переменными
+    </a>
   </li>
 
         
@@ -258,19 +326,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
     
     <label class="md-nav__link" for="nav-3">
       Технические статьи
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
     </label>
-    <nav class="md-nav" aria-label="Технические статьи" data-md-level="1">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-3">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
         Технические статьи
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -300,6 +362,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../tech/semantic/" title="Семантический конспект" class="md-nav__link">
+      Семантический конспект
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -312,18 +386,96 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Содержание</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="Что такое программирование?" class="md-nav__link">
+    Что такое программирование?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-" title="Блок-схема алгоритма" class="md-nav__link">
+    Блок-схема алгоритма
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
                 
+                  <h1>1.1. Алгоритм и блок-схема</h1>
+                
+                <h2 id="_1">Что такое программирование?</h2>
+<p><img alt="" src="../1.png" /></p>
+<p>Итак, прежде всего, уясним для себя, что же понимают под термином программирования? Сейчас многие называют себя программистами, не зная даже о том, что это такое: на проверку оказывается, что человек, изменивший пару строк кода в HTML-документе уже готов считать себя программистом. Но на самом деле, работая с HTML (именно с самим HTML), стать программистом нельзя, поскольку HTML, что явствует из названия (Hypertext Markup Language - язык разметки гипертекста), языком программирования не является.</p>
+<p>В результате мы имеем первое условие: для изучения программирования нужен какой-либо язык программирования. В нашем случае это будет учебный визуальный язык программирования блок-схем Flowgoritm.</p>
+<p>Далее, допустим кто-то, называющий себя программистом, не только правил пару строк кода HTML, но и видел супер-модную среду разработки, и даже нарисовал в неё форму с 2-3 кнопками и текстовым полем. Это ли программист? Скорее всего, тоже нет. Дело в том, что под визуальной оболочкой, на самом деле, скрывается сложнейший механизм, обеспечивающий взаимодействия элементов управления (тех же кнопок) с пользователем и операционной системой - с одной стороны, и позволяющий выполнять практически любые вычислительные действия - с другой. При всем этом следует уметь делать главное - составлять алгоритмы поведения программы - будь то ее реакция на нажатие той или иной кнопки, или создание функции для решения сложного математического уравнения.</p>
+<p>Так вот, программирование в, своем современном понятии, включает в себя знание принципов работы операционной системы, взаимодействия ее компонентов и внутреннего устройства. Ну и при этом сохраняется классическое определение программирования, а именно - умение составлять алгоритмы, математические и поведения программы. В данном курсе будут рассматриваться алгоритмические основы программирования, чтобы дальнейшее изучение синтаксиса было лёгким и приятным!</p>
+<h2 id="-">Блок-схема алгоритма</h2>
+<p>Для начала небольшой словарик:</p>
+<blockquote>
+<p>Алгоритм — точно описанная последовательность действий.  <br />
+Визуальный алгоритм — алгоритм, изображенный не в виде текста, а в виде наглядной картинки.  <br />
+Программа — последовательность действий, которые человек ленится выполнять сам и поэтому поручает компьютеру или роботу.   </p>
+</blockquote>
+<p>Блок-схема представляет собой "чертеж" алгоритма.
+<img alt="" src="../2.png" /> 
+На рисунке выше показан простейший алгоритм. Читать его нужно сверху вниз. Он содержит шесть действий:</p>
+<ul>
+<li>Пойди на птичий рынок.</li>
+<li>Выбери самого красивого попугая.</li>
+<li>Купи попугая.</li>
+<li>Отнеси попугая домой.</li>
+<li>Посади попугая в клетку.</li>
+<li>Научи попугая говорить.</li>
+</ul>
+<p>Действия выполняются последовательно, по очереди. Сначала одно, потом другое, затем третье.  <br />
+Время направлено вертикально вниз. Алгоритм нарисован по принципу «Чем ниже, тем позже». Например, действие «Отнеси попугая домой» выполняется позже, чем действие «Купи попугая». Прямоугольная иконка - это «инструкция», которую можно исполнять. </p>
+<p>Алгоритм делится на мелкие порции — шаги, которые следуют друг за другом (шаг за шагом).
+<img alt="" src="../3.png" />
+Мы видим, что не все фигуры являются шагами. Фигур восемь, а шагов только шесть.
+На каждом шаге выполняется одно действие, одна инструкция. Шаги выполняются поочередно и решают поставленную задачу. Главная и Конец (закругленные фигуры) — это обрамление алгоритма; они не выполняют никаких действий.
+Можно сказать по-другому: алгоритм есть графическая инструкция (памятка) для человека, который будет его выполнять.</p>
+<p>Бегунок — это воображаемая точка, которая перемещается (бегает) по алгоритму. Зачем? Чтобы помочь студентам понять суть алгоритма.
+Разумеется, она бегает не беспорядочно, а подчиняясь строгой дисциплине. Бегунок всегда держит путь из Начала в Конец, двигаясь по алгоритму от одной фигуры к следующей. Точно так же, как поезд следует от одной станции к другой.
+На рисунке выше бегунок начинает свой путь в самом верху. Приступая к работе, он (бегунок) начинает алгоритм с пункта «Главная». Затем делает шаг вниз и читает приказ: «Пойди на птичий рынок». Затем спускается еще на шаг и читает следующий приказ «Выбери самого красивого попугая». Далее он, действуя тем же порядком, перемещается вертикально вниз по всем фигурам. И заканчивает свой путь в иконке Конец. Конец — делу венец.
+Если вам не нравится слово «бегунок», вместо него можно сказать: рабочая точка алгоритма.</p>
+<div class="highlight"><pre><span></span>## Иконка &quot;Вопрос&quot;
+![](4.png)
+В верхней части рисунка изображена иконка &quot;Вопрос&quot;. Почему она так называется? Потому, что в ней пишут «да-нетный вопрос». То есть вопрос, на который можно ответить либо «Да», либо «Нет». Все другие ответы запрещены.
+В нашей жизни да-нетные вопросы встречаются очень часто. Вот примеры: утюг сломался? Вася купил хлеб? Поезд пришел? Преступника арестовали? Делегация приехала? «Спартак» выиграл? Эта доска короче, чем та? На улице температура выше нуля?
+На рисунке в иконке Вопрос находится вопросительное предложение: «Попугай боится подойти к кормушке?» При ответе «Да» выполняется действие «Рассыпь корм по дну клетки». При ответе «Нет» — «Насыпь корм в кормушку».
+Чтобы понять смысл иконки Вопрос, нужно читать ее сверху вниз. Именно так поступает бегунок. Он входит в икону Вопрос сверху, а выходит вниз или вправо.
+Алгоритмы нужны, чтобы решать сложные жизненные задачи. Такие задачи обычно содержат много развилок. Поэтому в алгоритмах нередко приходится использовать иконку Вопрос. Ее применяют всякий раз, когда нужно выбрать одно направление из двух.
+Иногда в алгоритме надо сделать не одну, а целый ряд развилок. Для этого используют несколько иконок Вопрос.
+</pre></div>
+                
                   
-                
-                
-                  <h1>1.1. Технология программирования</h1>
-                
-                <p>Это первая страничка</p>
                 
               
               
@@ -340,34 +492,34 @@
 <footer class="md-footer">
   
     <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+      <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../prep/install/" title="Установка программного обеспечения" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          <a href="../../prep/install/" title="Установка программного обеспечения" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Назад
                 </span>
                 Установка программного обеспечения
-              </div>
+              </span>
             </div>
           </a>
         
         
-          <a href="../../../tech/cheatsheet/" title="Шпаргалка по Markdown" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
+          <a href="../t2/" title="1.2. Переменные и константы" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Вперед
                 </span>
-                Шпаргалка по Markdown
-              </div>
+                1.2. Переменные и константы
+              </span>
             </div>
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
             </div>
           </a>
         
@@ -378,11 +530,14 @@
     <div class="md-footer-meta__inner md-grid">
       <div class="md-footer-copyright">
         
-        Made with
-        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-          Material for MkDocs
-        </a>
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
       </div>
+      
+        
       
     </div>
   </div>
@@ -390,24 +545,37 @@
       
     </div>
     
-      <script src="../../../assets/javascripts/vendor.d710d30a.min.js"></script>
-      <script src="../../../assets/javascripts/bundle.b39636ac.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "search.config.lang": "ru", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e # \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439"}</script>
+      <script src="../../../assets/javascripts/application.583bbe55.js"></script>
       
-      <script>
-        app = initialize({
-          base: "../../..",
-          features: [],
-          search: Object.assign({
-            worker: "../../../assets/javascripts/worker/search.a68abb33.min.js"
-          }, typeof search !== "undefined" && search)
-        })
-      </script>
+        
+        
+          
+          <script src="../../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+          
+            
+              
+              
+                <script src="../../../assets/javascripts/lunr/lunr.ru.js"></script>
+              
+            
+          
+          
+            <script src="../../../assets/javascripts/lunr/lunr.multi.js"></script>
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
       
         <script src="../../../mermaid/mermaid.min.js"></script>
       
         <script src="../../../katex/mkdocs_load.js"></script>
       
         <script src="../../../katex/katex.min.js"></script>
+      
+    
+    
       
     
   </body>

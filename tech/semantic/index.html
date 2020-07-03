@@ -1,0 +1,738 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Копировать в буфер">
+      
+        <meta name="lang:clipboard.copied" content="Скопировано в буфер">
+      
+        <meta name="lang:search.language" content="en, ru">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="Совпадений не найдено">
+      
+        <meta name="lang:search.result.one" content="Найдено 1 совпадение">
+      
+        <meta name="lang:search.result.other" content="Найдено # совпадений">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+    
+    
+      
+        <title>Семантический конспект - Курс "Алгоритмическое мышление программиста"</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.451f80e5.css">
+      
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+      <link rel="stylesheet" href="../../mermaid/mermaid.css">
+    
+      <link rel="stylesheet" href="../../katex/katex.min.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="../../#1" tabindex="1" class="md-skip">
+        Перейти к содержанию
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Курс "Алгоритмическое мышление программиста"" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Курс "Алгоритмическое мышление программиста"
+              </span>
+              <span class="md-header-nav__topic">
+                Семантический конспект
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Начните печатать для поиска
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="Курс "Алгоритмическое мышление программиста"" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Курс "Алгоритмическое мышление программиста"
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Главная" class="md-nav__link">
+      Главная
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Курс
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Курс
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../course/prep/install/" title="Установка программного обеспечения" class="md-nav__link">
+      Установка программного обеспечения
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2">
+    
+    <label class="md-nav__link" for="nav-2-2">
+      1. Основы алгоритмизации и программирования
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        1. Основы алгоритмизации и программирования
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../course/p1/t1/" title="1.1. Алгоритм и блок-схема" class="md-nav__link">
+      1.1. Алгоритм и блок-схема
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../course/p1/t2/" title="1.2. Переменные и константы" class="md-nav__link">
+      1.2. Переменные и константы
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../course/p1/t3/" title="1.2. Основные операции с переменными" class="md-nav__link">
+      1.2. Основные операции с переменными
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Технические статьи
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Технические статьи
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cheatsheet/" title="Шпаргалка по Markdown" class="md-nav__link">
+      Шпаргалка по Markdown
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../deploy/" title="Выкладывание на Github pages" class="md-nav__link">
+      Выкладывание на Github pages
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Семантический конспект
+      </label>
+    
+    <a href="./" title="Семантический конспект" class="md-nav__link md-nav__link--active">
+      Семантический конспект
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Содержание</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" title="1. Основные понятия" class="md-nav__link">
+    1. Основные понятия
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-" title="1.1 Алгоритм и блок-схема" class="md-nav__link">
+    1.1 Алгоритм и блок-схема
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12" title="1.2 Переменные и константы" class="md-nav__link">
+    1.2 Переменные и константы
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13" title="1.3 Основные операции" class="md-nav__link">
+    1.3 Основные операции
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14" title="1.4 Логические операции" class="md-nav__link">
+    1.4 Логические операции
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15" title="1.5 Линейная программа" class="md-nav__link">
+    1.5 Линейная программа
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16" title="1.6 Условные выражения" class="md-nav__link">
+    1.6 Условные выражения
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17" title="1.7 Циклы" class="md-nav__link">
+    1.7 Циклы
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18" title="1.8 Функции" class="md-nav__link">
+    1.8 Функции
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Содержание</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" title="1. Основные понятия" class="md-nav__link">
+    1. Основные понятия
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-" title="1.1 Алгоритм и блок-схема" class="md-nav__link">
+    1.1 Алгоритм и блок-схема
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12" title="1.2 Переменные и константы" class="md-nav__link">
+    1.2 Переменные и константы
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13" title="1.3 Основные операции" class="md-nav__link">
+    1.3 Основные операции
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14" title="1.4 Логические операции" class="md-nav__link">
+    1.4 Логические операции
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15" title="1.5 Линейная программа" class="md-nav__link">
+    1.5 Линейная программа
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16" title="1.6 Условные выражения" class="md-nav__link">
+    1.6 Условные выражения
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17" title="1.7 Циклы" class="md-nav__link">
+    1.7 Циклы
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18" title="1.8 Функции" class="md-nav__link">
+    1.8 Функции
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Семантический конспект</h1>
+                
+                <h2 id="1">1. Основные понятия</h2>
+<h3 id="11-">1.1 Алгоритм и блок-схема</h3>
+<p>1.1.1  Алгоритм — точно описанная последовательность действий, ведущая к поставленной цели.  <br />
+1.1.2  Визуальный алгоритм — алгоритм, изображенный не в виде текста, а в виде наглядной картинки.  <br />
+1.1.3  Программа — последовательность действий, которые человек ленится выполнять сам и поэтому поручает компьютеру или роботу.  <br />
+1.1.4  Блок-схема - чертеж алгоритма.  <br />
+1.1.5  Чтение алгоритма производят сверху-вниз по стрелкам.  <br />
+1.1.6  Алгоритм состоит из фигур.  <br />
+1.1.7  Чем ниже фигура в алгоритме, тем позже происходит её выполнение.  <br />
+1.1.8  Обрамления алгоритма обозначаются овалом.  <br />
+1.1.9  Обрамления алгоритма не выполняют действий.  <br />
+1.1.10 Шаги алгоритма - действия, решающие конкретную задачу.  <br />
+1.1.11 Бегунок — это воображаемая точка, которая перемещается по алгоритму.  <br />
+1.1.12 Бегунок всегда перемещается из Начала в Конец.    </p>
+<h3 id="12">1.2 Переменные и константы</h3>
+<p>1.2.1  Константа — это величина, которая при выполнении программы остаётся неизменной.  <br />
+1.2.2  Переменная — это ячейка памяти для временного хранения данных.   <br />
+1.2.3  Идентификатор - имя написанное с определёнными правилами.   <br />
+1.2.4  Первым символом идентификатора должна быть латинская буква.   <br />
+1.2.5  Вторым и последующим символом идентификатора может быть латинская буква или цифра.  <br />
+1.2.6  Идентификатор не должен повторять зарезервированные слова в языке.  <br />
+1.2.7  Идентификатор чувствителен к регистру.  <br />
+1.2.8  Тип данных - определяет множество значений и операции над этими значениями.  <br />
+1.2.9  Для объявления переменной используется идентификатор и тип данных.  <br />
+1.2.10 Целочисленный тип данных - включает множество целых чисел в ограниченном диапазоне, операции сравнения и целочисленные арифметические операции. <br />
+1.2.11 Вещественный тип данных - включает множество рациональных чисел, операции сравнения и арифметические операции над вещественными числами.  <br />
+1.2.12 Логический тип данных - включает значения истина/ложь, операции сравнения и логические операции. <br />
+1.2.13 Выражением называется совокупность переменных, констант, операций, скобок, которая возвращает значение.  <br />
+1.2.14 Для использования в алгоритме необходимо объявить переменную.  <br />
+1.2.15 Переменная объявляется на блок-схеме через оператор объявления.   <br />
+1.2.16 Оператор объявления выглядит как прямоугольник с рамками.  <br />
+1.2.17 Во время операции присваивания происходит копирование значения выражения с правой стороны в переменную слева.  <br />
+1.2.18 Для добавления присваивания на блок-схему используется оператор присваивания.  <br />
+1.2.19 Оператор присваивания обозначается прямоугольником.  <br />
+1.2.20 Когда в переменную записывают новое значение, старое стирается.    </p>
+<h3 id="13">1.3 Основные операции</h3>
+<p>1.3.1  К арифметическим операциям для целочисленного типа относят сложение, вычитание, умножение, деление и получения остатка от деления.  <br />
+1.3.2  Целочисленные арифметические операций возвращают целое число.  <br />
+1.3.3  К арифметическим операциям над вещественными числами относят сложение, вычитание, умножение, деление.     <br />
+1.3.4  Арифметические операции для двух вещественных чисел возвращают вещественное число.   <br />
+1.3.6  К операциям сравнения относят проверки на равенство, неравенство строгое, неравенство нестрогое, равно, неравно.  <br />
+1.3.7  Операции сравнения возвращают логический тип.   <br />
+1.3.8  Приоритет операций определяют порядок вычисления выражения.  <br />
+1.3.9  Операция присваивания имеет низший приоритет.  <br />
+1.3.10 Для управления приоритетом вычисления операций необходимо использовать скобки.  <br />
+1.3.11 В выражении с разными типами данных происходит их преобразование в одинаковый тип данных.    </p>
+<h3 id="14">1.4 Логические операции</h3>
+<p>1.4.1 К логическим операциям относят логическое И, ИЛИ, НЕ.  <br />
+1.4.2 Логическая операция возвращает логический тип.  <br />
+1.4.3 Логическое И обозначается как &amp;&amp;.  <br />
+1.4.4 Логическое ИЛИ обозначается как ||.  <br />
+1.4.5 Логическое НЕ обозначается как !.  <br />
+1.4.6 Логические операции вычисляются согласно таблице истинности.   </p>
+<h3 id="15">1.5 Линейная программа</h3>
+<p>1.5.1 Программа должна иметь одну точку входа. <br />
+1.5.2 Программа должна иметь хотя бы одну точку завершения.   <br />
+1.5.3 Инструкция - это законченный фрагмент исполняемого кода, не возвращающий значения.  <br />
+1.5.4 Программа выполняет последовательно набор инструкций.   <br />
+1.5.5 Ввод - этап получения значений от пользователя для установки в переменные.  <br />
+1.5.6 Обработка - этап выполнения операций над переменными.  <br />
+1.5.7 Вывод - этап представления результата пользователю.  <br />
+1.5.8 Линейная программа состоит из последовательного этапа ввода, обработки и вывода.     </p>
+<h3 id="16">1.6 Условные выражения</h3>
+<p>1.6.1 Условный оператор - оператор, обеспечивающий выполнение группы инструкций только при условии истинности логического выражения.  <br />
+1.6.2 Условный оператор с одной ветвью:  ЕСЛИ (Условие) - КОНЕЦ.  <br />
+1.6.3 Условный оператор с двумя ветвями: ЕСЛИ (Условие) - ИНАЧЕ - КОНЕЦ.  <br />
+1.6.4 Условный оператор с несколькими условиями: ЕСЛИ (Условие1) - ЕСЛИ (Условие2) - КОНЕЦ.  <br />
+1.6.5 Условный оператор может быть вложенным.     </p>
+<h3 id="17">1.7 Циклы</h3>
+<p>1.7.1  Циклом называется группа инструкций, которую для решения задачи требуется повторить несколько раз.  <br />
+1.7.2  Тело цикла содержит последовательность инструкций.
+1.7.3  Блок проверки условия - при истинности выражения внутри него продолжается выполнение тела цикла.  <br />
+1.7.4  В цикл входит блок проверки условия и тело цикла.  <br />
+1.7.5  Цикл с предусловием проверяет блок условия до начала выполнения тела цикла.  <br />
+1.7.6  Цикл с постусловием проверяет блок условия после выполнения тела цикла.  <br />
+1.7.7  Параметрический цикл позволяет настроить число повторений в блоке условий.  <br />
+1.7.8  Параметр цикла - специальная переменная которая меняется автоматически в блоке проверки условия.  <br />
+1.7.9  Инициализация параметрического цикла - присваивание параметру цикла начального значения.  <br />
+1.7.10 Условие параметрического цикла - сравнение величины параметра с некоторым граничным значением.  <br />
+1.7.11 Модификация - изменение значения параметра для следующего прохождения тела цикла.  <br />
+1.7.12 В блок условий для параметрического цикла входит инициализация, условие продолжения и модификация.    </p>
+<h3 id="18">1.8 Функции</h3>
+<p>1.8.1  Функция — набор инструкций, к которому можно обратиться из другого места программы.  <br />
+1.8.2  Аргументы функции - переменные, передаваемые функции, которые используются для обмена информацией.  <br />
+1.8.3  Входные аргументы функции могут отсутствовать.   <br />
+1.8.4  Тип возвращаемого значения может отсутствовать.  <br />
+1.8.5  Для использования в инструкциях функция должна быть объявлена и определена.  <br />
+1.8.6  В объявление функции входит указание имени функции, списка входных аргументов и типа возвращаемого значения.  <br />
+1.8.7  В определение функции входит отдельный набор инструкций.  <br />
+1.8.8  Функция определяет собственную область видимости переменных.   <br />
+1.8.9  В область видимости переменных функции входят входные аргументы, а также те переменные, которые объявляются в теле самой функции.  <br />
+1.8.10 Системные функции хранятся в стандартных библиотеках, и пользователю не нужно вдаваться в подробности их реализации.  <br />
+1.8.11 К системным функциям относятся Abs, Cos, Random.  <br />
+1.8.12 Собственные функции — это функции, написанные пользователем для решения конкретной подзадачи.  <br />
+1.8.13 Фактический аргумент — это величина, которая присваивается входному аргументу при вызове функции.  <br />
+1.8.14 Для вызова функции необходимо указать имя функции и список фактических аргументов.  <br />
+1.8.15 После выполнения функции осуществляется возврат в точку её вызова.    </p>
+<p>x.1.1 Программное обеспечение - ПО
+x.1.2 Жизненный цикл программного обеспечения (ЖЦ) - период от момента появления идеи создания ПО до момента завершения его поддержки разработчиком.  <br />
+x.1.3 Требованиями называют точное описание функций и ограничений разрабатываемого ПО.  <br />
+x.1.4 В постановку задачи входит определение подробных требований для разработки ПО.  <br />
+x.1.5 Язык программирования является обозначением для написания программ. <br />
+x.1.6 Сборка ПО представляет собой подготовку программы, написанной на языке программирования, для запуска пользователем. <br />
+x.1.7 К реализации относится проектирование ПО по требованиям, написание программы на языке программирования и сборка ПО.<br />
+x.1.8 Во время тестирования проверяется соответствие текущей версии ПО с требованиями. <br />
+x.1.9 Жизненный цикл последовательно охватывает шаги: постановка задачи, реализация, тестирование.   </p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../deploy/" title="Выкладывание на Github pages" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Назад
+                </span>
+                Выкладывание на Github pages
+              </span>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.583bbe55.js"></script>
+      
+        
+        
+          
+          <script src="../../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+          
+            
+              
+              
+                <script src="../../assets/javascripts/lunr/lunr.ru.js"></script>
+              
+            
+          
+          
+            <script src="../../assets/javascripts/lunr/lunr.multi.js"></script>
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+        <script src="../../mermaid/mermaid.min.js"></script>
+      
+        <script src="../../katex/mkdocs_load.js"></script>
+      
+        <script src="../../katex/katex.min.js"></script>
+      
+    
+    
+      
+    
+  </body>
+</html>
