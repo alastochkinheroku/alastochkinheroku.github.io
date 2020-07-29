@@ -1,0 +1,771 @@
+
+
+
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.4.0">
+    
+    
+      
+        <title>1.6. Логический тип данных - Курс "Основы алгоритмического программирования"</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.fe0cca5b.min.css">
+      
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../../mermaid/mermaid.css">
+    
+      <link rel="stylesheet" href="../../../katex/katex.min.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#16" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../../.." title="Курс "Основы алгоритмического программирования"" class="md-header-nav__button md-logo" aria-label="Курс "Основы алгоритмического программирования"">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Курс "Основы алгоритмического программирования"
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              1.6. Логический тип данных
+            
+          </span>
+        </div>
+      
+    </div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Курс "Основы алгоритмического программирования"" class="md-nav__button md-logo" aria-label="Курс "Основы алгоритмического программирования"">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Курс "Основы алгоритмического программирования"
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Главная" class="md-nav__link">
+      Главная
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Курс Flowgoritm
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Курс Flowgoritm" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Курс Flowgoritm
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../course_flow/prep/install/" title="Установка программного обеспечения" class="md-nav__link">
+      Установка программного обеспечения
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2">
+    
+    <label class="md-nav__link" for="nav-2-2">
+      1. Основы алгоритмизации и программирования
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="1. Основы алгоритмизации и программирования" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        1. Основы алгоритмизации и программирования
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../course_flow/p1/t1/" title="1.1. Алгоритм и блок-схема" class="md-nav__link">
+      1.1. Алгоритм и блок-схема
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../course_flow/p1/t2/" title="1.2. Переменные и константы" class="md-nav__link">
+      1.2. Переменные и константы
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../course_flow/p1/t3/" title="1.3. Основные операции с переменными" class="md-nav__link">
+      1.3. Основные операции с переменными
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Курс Python
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Курс Python" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Курс Python
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../install/" title="Установка программного обеспечения" class="md-nav__link">
+      Установка программного обеспечения
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2" checked>
+    
+    <label class="md-nav__link" for="nav-3-2">
+      1. Основы алгоритмизации и программирования
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="1. Основы алгоритмизации и программирования" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        1. Основы алгоритмизации и программирования
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../t1/" title="1.1. Блок-схема и псевдокод" class="md-nav__link">
+      1.1. Блок-схема и псевдокод
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../t2/" title="1.2. Целое число" class="md-nav__link">
+      1.2. Целое число
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../t3/" title="1.3. Вещественное число" class="md-nav__link">
+      1.3. Вещественное число
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../t4/" title="1.4. Строковый тип данных" class="md-nav__link">
+      1.4. Строковый тип данных
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../t5/" title="1.5. Переменные, присваивание" class="md-nav__link">
+      1.5. Переменные, присваивание
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        1.6. Логический тип данных
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="1.6. Логический тип данных" class="md-nav__link md-nav__link--active">
+      1.6. Логический тип данных
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#16" class="md-nav__link">
+    1.6. Логический тип данных
+  </a>
+  
+    <nav class="md-nav" aria-label="1.6. Логический тип данных">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#not" class="md-nav__link">
+    Оператор not
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#or" class="md-nav__link">
+    Оператор or
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#and" class="md-nav__link">
+    Оператор and
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Технические статьи
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Технические статьи" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Технические статьи
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../tech/cheatsheet/" title="Шпаргалка по Markdown" class="md-nav__link">
+      Шпаргалка по Markdown
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../tech/deploy/" title="Выкладывание на Github pages" class="md-nav__link">
+      Выкладывание на Github pages
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../tech/semantic/" title="Семантический конспект" class="md-nav__link">
+      Семантический конспект
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../tech/procedural/" title="Процедурная модель" class="md-nav__link">
+      Процедурная модель
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#16" class="md-nav__link">
+    1.6. Логический тип данных
+  </a>
+  
+    <nav class="md-nav" aria-label="1.6. Логический тип данных">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#not" class="md-nav__link">
+    Оператор not
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#or" class="md-nav__link">
+    Оператор or
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#and" class="md-nav__link">
+    Оператор and
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                  <h1>1.6. Логический тип данных</h1>
+                
+                <h2 id="16">1.6. Логический тип данных</h2>
+<p>Итак, скажите мне, верно ли выражение:
+<div class="highlight"><pre><span></span><code>5 &gt; 2 
+</code></pre></div>
+Да, верно, скажете вы. Число 5 больше, чем число 2.
+Так вот, знак &gt; является логическим (булевым) оператором.
+У всех логических выражений есть два значения – Верно или Ложно. Но чаще всего программисты говорят по-английски: Тру (True) или Фалс (False).
+Итак, если мы в программе EdSharp запишем это выражение, то Python нам должен выдать значение: True
+Проверим. Введем наше выражение:
+<div class="highlight"><pre><span></span><code>print(5&gt;2)
+</code></pre></div>
+Ага, на выходе True. Идем дальше.
+А если мы введем 5 &lt; 2 – что будет тогда? По идее, зная математику, это выражение должно иметь значение Ложно (False)!
+Переделываем пример и смотрим. Действительно. Идем дальше. Мы рассмотрели самый простой вариант логического выражения и оператора. Далее рассмотрим основные логические операторы.</p>
+<h3 id="not">Оператор not</h3>
+<p>not False - значение True (Верно)  <br />
+not True - значение False (Ложно)  <br />
+То есть оператор not дает противоположное значение: «не ложь – это правда».  <br />
+<div class="highlight"><pre><span></span><code>print(not False)
+</code></pre></div></p>
+<p>Результат: True
+Кстати, попробуйте самостоятельно набрать Not False и посмотрите, что выдаст Питон.    </p>
+<h3 id="or">Оператор or</h3>
+<p>True or False – значение True  <br />
+True or True – значение True  <br />
+False or True – значение True  <br />
+False or False - значение False  <br />
+Этот оператор говорит: Правда или Ложь? – Правда. Если в выражении «или» встречается хоть одно True – общее значение будет True.  <br />
+Если оба False – значит False    </p>
+<p>А теперь введем выражение:
+<div class="highlight"><pre><span></span><code>print((5 &gt; 2) or (5 &lt; 2))
+</code></pre></div></p>
+<h3 id="and">Оператор and</h3>
+<p>True and False – значение False  <br />
+True and True – значение True  <br />
+False and True – значение False  <br />
+False and False - значение False    </p>
+<p>То есть здесь мы видим все наоборот. Оператор and дает приоритет значению False. И только если оба значения True and True – итоговое значение тоже будет True.  <br />
+Запишите в выражение:  <br />
+<div class="highlight"><pre><span></span><code>print((5 &gt; 2) and (5 &lt; 2))
+</code></pre></div>
+и узнайте итоговое значение.    </p>
+<p>Оператор != (не равно)    </p>
+<p>5 != 2 – значение True  <br />
+5 != 5 – значение False    </p>
+<p>Здесь также все ясно: 5 не равно 2 – это Правда. А 5 не равно 5 – это Ложь.    </p>
+<p>Оператор == (равно)    </p>
+<p>5 == 2 – значение False  <br />
+5 == 5 – значение True    </p>
+<p>И здесь все понятно: 5 равно 2 – это Ложь, а 5 равно 5 – Правда. Оператор записывается как два подряд знака = Внимание: не путайте с операцией присваивания переменной.    </p>
+<p>Операторы сравнения: &gt; (больше), &lt; (меньше), &lt;= (меньше или равно), &gt;= (больше или равно). В логических выражениях, вместо конкретных чисел могут использоваться переменные, не забывайте!
+Пора практиковаться!</p>
+<ul>
+<li>Вычислите в уме, а затем проверьте результат работы следующего выражения: (4&lt;5) or (10&lt;8)</li>
+<li>Вычислить значения логических выражений при следующих значениях логических переменных А=Истина, В=Ложь, С=Ложь
+a) (A ИЛИ НЕ A И B) ИЛИ C 
+б) НЕ A ИЛИ A И (B ИЛИ C) 
+в) (A ИЛИ B И НЕ C) И C</li>
+<li>Вычислить значение логических выражений при следующих значениях логических переменных X=0, Y=1,Z=0
+а) X И НЕ(X ИЛИ Y) И НЕ Z
+б) НЕ X ИЛИ X И (Y ИЛИ Z)
+в) (X ИЛИ Y И НЕ Z) И Z</li>
+<li>Вычислить значение логического выражения, с использованием переменных
+а) (НЕ(x * y &lt; 0)) И ( y &gt; x) при x=2, y=1;
+б) (x &gt;= 2) ИЛИ (y*y != 5) при x=2, y=-2.</li>
+<li>Вычислите в уме, а затем проверьте результат работы следующего выражения:
+a=34
+b=38
+c=b-10
+k=not( (a &lt; b) and (b &gt; c))
+print(k)</li>
+<li>Записать условие, которое является истинным, когда целое А кратно двум или трем.</li>
+<li>Записать условие, которое является истинным, когда каждое из чисел А и В нечетное.</li>
+<li>Записать логическое выражение определяющее, что число А является трехзначным.</li>
+<li>Записать условие, которое является истинным, когда только одно из чисел А, В и С меньше 45.</li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../t5/" title="1.5. Переменные, присваивание" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Назад
+                </span>
+                1.5. Переменные, присваивание
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../../../tech/cheatsheet/" title="Шпаргалка по Markdown" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Вперед
+                </span>
+                Шпаргалка по Markdown
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/vendor.d710d30a.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.b39636ac.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "search.config.lang": "ru", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e # \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../../assets/javascripts/worker/search.a68abb33.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+        <script src="../../../mermaid/mermaid.min.js"></script>
+      
+        <script src="../../../katex/mkdocs_load.js"></script>
+      
+        <script src="../../../katex/katex.min.js"></script>
+      
+    
+  </body>
+</html>
