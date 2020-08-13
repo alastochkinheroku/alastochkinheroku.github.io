@@ -53,7 +53,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#todo" class="md-skip">
+        <a href="#1" class="md-skip">
           Перейти к содержанию
         </a>
       
@@ -616,12 +616,48 @@
     
     <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
-      
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        1.15. Курсовая работа
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
     
     <a href="./" title="1.15. Курсовая работа" class="md-nav__link md-nav__link--active">
       1.15. Курсовая работа
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    Дополнительная задача 1. Одноразовые доходы.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    Дополнительная задача 2
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -836,8 +872,30 @@
 <nav class="md-nav md-nav--secondary" aria-label="Содержание">
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    Дополнительная задача 1. Одноразовые доходы.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    Дополнительная задача 2
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -853,7 +911,51 @@
                   
                 
                 
-                <h1 id="todo">TODO:</h1>
+                  <h1>1.15. Курсовая работа</h1>
+                
+                <p>Для реализации личного помощника по финансам необходимо выполнить следующие требования:</p>
+<ol>
+<li>Создать глобальные переменные, которые будут хранить - ежемесячный доход, ежемесячный расход, разовый доход. </li>
+<li>Реализовать функцию <code>add_mounth_income(amount)</code>, которая добавляет к текущим постоянным ежемесячным доходам сумму amount и ничего не возвращает.</li>
+<li>Реализовать функцию <code>add_mounth_outcome(amount)</code>, которая добавляет к ежемесячным расходам сумму amount и ничего не возвращает.</li>
+<li>Сделать переменную, которая хранит процент отчисления для резервного фонда ежемесячно. По-умолчанию 20%.</li>
+<li>Сделать переменную-финансовую цель, которая хранит сумму, которую необходимо накопить. По-умолчанию, на путешествие 60000. Дополнительно, сделать функцию <code>set_fintarget(amount)</code>, которая устанавливает это значение.</li>
+<li>Сделать переменную, которая хранит процент для откладывания на финансовую цель ежемесячно. По-умолчанию 10%.</li>
+<li>Реализовать функцию <code>day_balance()</code>, которая выдаёт ежедневный баланс, только на основе ежемесячных поступлений. В примере это 1319. Принять что в месяце 30 дней.</li>
+<li>Реализовать функцию <code>reserve_size(days)</code>, которая показывает размер резервного фонда через заданное число дней. </li>
+<li>Реализовать функцию <code>fintarget_size(days)</code>, которая показывает размер фонда финансовой цели через заданное число дней.</li>
+<li>Реализовать функцию <code>prognoze()</code>, которая выводит сводку размеров фондов на год, с шагом в месяц, а также признак будет ли достигнута финансовая цель. Она должна использовать ранее определённые функции reserve_size, fintarget_size.</li>
+</ol>
+<p>Шаблон скрипта:
+<div class="highlight"><pre><span></span><code>#глобальный переменные
+
+#функции add_mounth_income, add_mounth_outcome, ...
+
+#использование
+#добавляем ежемесячные доходы
+add_mounth_income(100000)
+#добавляем ежемесячные расходы
+add_mounth_outcome(25000) #Ипотека/аренда квартиры
+add_mounth_outcome(2500)  #Коммунальные платежи
+add_mounth_outcome(3500)  #Абонемент для занятий спортом
+#устанавливаем финансовую цель
+set_fintarget(60000)
+#получаем сводку
+prognoze()
+</code></pre></div></p>
+<p>Пример выдачи:
+<div class="highlight"><pre><span></span><code>Месяц  Резерв    Цель
+1      19785     6595
+...
+Цель - достигнута. Срок: 10 месяцев.
+</code></pre></div></p>
+<h3 id="1">Дополнительная задача 1. Одноразовые доходы.</h3>
+<ol>
+<li>Реализовать функцию <code>add_once_income(amount)</code>, которая добавляет к текущим одноразовым доходам сумму amount и ничего не возвращает.</li>
+<li>Функции reserve_size и fintarget_size используют значения с одноразового дохода.</li>
+</ol>
+<h3 id="2">Дополнительная задача 2</h3>
+<p>Реализовать рекомендательную систему на свой выбор. Она должна по размерам фондов, ежемесячных доходов и т.п. давать рекомендации по увеличении процента резервного фонда, его уменьшению, а также для финансовой цели.</p>
                 
               
               
