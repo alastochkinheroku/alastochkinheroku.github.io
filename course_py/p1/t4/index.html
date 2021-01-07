@@ -11,7 +11,7 @@
       
       
       <link rel="shortcut icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.4.0">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.3">
     
     
       
@@ -19,7 +19,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.fe0cca5b.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.947af8d5.min.css">
       
       
     
@@ -203,8 +203,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../t1/" title="1.1. Блок-схема и псевдокод" class="md-nav__link">
-      1.1. Блок-схема и псевдокод
+    <a href="../t1/" title="1.1. Введение" class="md-nav__link">
+      1.1. Введение
     </a>
   </li>
 
@@ -411,6 +411,18 @@
   <li class="md-nav__item">
     <a href="../t15/" title="1.15. Курсовая работа" class="md-nav__link">
       1.15. Курсовая работа
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../t16/" title="1.16. Курсовая работа-2" class="md-nav__link">
+      1.16. Курсовая работа-2
     </a>
   </li>
 
@@ -651,6 +663,18 @@
   <li class="md-nav__item">
     <a href="../../../tasks/p1/t15/" title="1.15. Курсовая работа" class="md-nav__link">
       1.15. Курсовая работа
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../tasks/p1/t16/" title="1.16. Курсовая работа-2" class="md-nav__link">
+      1.16. Курсовая работа-2
     </a>
   </li>
 
@@ -912,12 +936,56 @@
                   <h1>1.4. Строковый тип данных</h1>
                 
                 <h2 id="14">1.4. Строковый тип данных</h2>
-<p>Дело дошло до оформления! Ведь строки нужны для наглядной выдачи пользователю, а не для компьютера. Мы пока разберем вывод строки на экран. Строка содержит символы алфавита, а строковое значение обрамляется кавычками. Причём, как одинарными так и двойными. Это сделано для того, чтобы одни кавычки можно было использовать внутри других без экранирования. Василий Петрович поморщился. Экранирование - это добавление одного символа (косая черта "\"), которая говорит что следующий символ надо рассматривать как часть алфавита, а не специальный код. С символами, которые потребуют экранирования мы познакомимся в дальнейшем. Теперь поможем написать объявление:
+<p>Дело дошло до оформления! Ведь строки нужны для наглядной выдачи пользователю, а не для компьютера. Мы пока разберем вывод строки на экран. Строка содержит символы алфавита, а строковое значение обрамляется кавычками. Причём, как одинарными так и двойными. Это сделано для того, чтобы одни кавычки можно было использовать внутри других без экранирования. Экранирование - это добавление одного символа (косая черта "\"), которая говорит что следующий символ надо рассматривать как часть алфавита, а не специальный код. С символами, которые потребуют экранирования мы познакомимся в дальнейшем. Теперь поможем написать объявление:
 <div class="highlight"><pre><span></span><code>print(&quot;Всем ученикам и их родителям!&quot;)
 print(&#39;Обязательно прийти на ближайший субботник!&#39;)
 print(&#39;&quot;Администрация&quot;&#39;)
 </code></pre></div>
-В первой строке мы использовали стиль с двойными кавычками, далее с одинарными и, наконец, выводим двойные кавычки. <a href="../../../tasks/p1/t4">Немного упражнений</a>.</p>
+В первой строке мы использовали стиль с двойными кавычками, далее с одинарными и, наконец, выводим двойные кавычки. 
+Теперь познакомимся с операциями:</p>
+<table>
+<thead>
+<tr>
+<th>Операция</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x + y</td>
+<td>Сложение строк (конкатенация)</td>
+</tr>
+<tr>
+<td>x * y</td>
+<td>Построение строк</td>
+</tr>
+<tr>
+<td>str(x)</td>
+<td>Преобразование объекта в строку</td>
+</tr>
+<tr>
+<td>len(x)</td>
+<td>Длина строки</td>
+</tr>
+</tbody>
+</table>
+<p>Опробуем сложение строк:</p>
+<div class="highlight"><pre><span></span><code>print(&quot;Привет&quot; + &quot; &quot; + &quot;мир!&quot;)
+</code></pre></div>
+
+<p>Выведем пять раз символ <code>X</code>:
+<div class="highlight"><pre><span></span><code>print(&quot;X&quot;*5)
+</code></pre></div></p>
+<p>Функции помогут для разных типов данных:</p>
+<div class="highlight"><pre><span></span><code>print(&quot;Правильный ответ:&quot;)
+print(str(5.14))
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>print(&quot;Длина строки &#39;абракадабра&#39;:&quot;)
+print(len(&#39;абракадабра&#39;))
+</code></pre></div>
+
+<p><a href="../../../tasks/p1/t4">Немного упражнений</a>.</p>
                 
               
               
@@ -984,15 +1052,15 @@ print(&#39;&quot;Администрация&quot;&#39;)
       
     </div>
     
-      <script src="../../../assets/javascripts/vendor.d710d30a.min.js"></script>
-      <script src="../../../assets/javascripts/bundle.b39636ac.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "search.config.lang": "ru", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e # \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439"}</script>
+      <script src="../../../assets/javascripts/vendor.c3dc8c49.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.f9edbbd5.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "search.config.lang": "ru", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e # \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439"}</script>
       
       <script>
         app = initialize({
           base: "../../..",
           features: [],
           search: Object.assign({
-            worker: "../../../assets/javascripts/worker/search.a68abb33.min.js"
+            worker: "../../../assets/javascripts/worker/search.8e2cddea.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
